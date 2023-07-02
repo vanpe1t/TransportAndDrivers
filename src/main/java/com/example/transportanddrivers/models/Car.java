@@ -7,15 +7,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public abstract class Transport {
+public class Car extends Transport{
 
-    private int weight;
-    private int maxSpeed;
-    private String color;
+    @Override
+    public void gas() {
 
+    }
 
-    public abstract void gas();
+    @Override
+    public void brake() {
 
-    public abstract void brake();
-
+    }
 }
